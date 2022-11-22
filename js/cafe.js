@@ -113,7 +113,7 @@ var Cafe = {
     Cafe.updateItem(itemEl, delta);
   },
   formatPrice: function(price) {
-    return '$' + Cafe.formatNumber(price / 1000, 2, '.', ',');
+    return Cafe.formatNumber(price / 1000, 2, '.', ',') + 'Шнюков';
   },
   formatNumber: function(number, decimals, decPoint, thousandsSep) {
     number = (number + '').replace(/[^0-9+\-Ee.]/g, '')
